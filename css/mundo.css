@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e3f2fd;
+}
+
+header {
+    /* background-color: #333; */
+    background-color: #0288d1;
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.nav-menu ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-menu ul li::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s ease;
+}
+.nav-menu ul li:hover::before {
+    width: 100%;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.5s, background-color 0.5s;
+    position: relative;
+}
+ul li a:hover {
+    padding: 2px;
+    color: #333;
+    background-color: #fff;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s ease;
+}
+ul li a:hover::after {
+    width: 100%;
+}
+
+.barra-busca {
+    display: flex;
+    align-items: center;
+}
+.barra-busca input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+}
+.barra-busca button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 3px 3px 0;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.barra-busca button:hover {
+    background-color: #666;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.main-content {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.card-noticia {
+    background-color: #f4f4f4;
+    /* border: 1px solid #ddd; */
+    border: 2px solid #0288d1;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.card-noticia img {
+    border: 3px solid #0288d1;
+    width: 100%;
+    border-radius: 5px;
+}
+.card-noticia h2, .card-noticia h3 {
+    color: #0288d1;
+    margin: 10px 0;
+}
+.card-noticia a {
+    /* color: #000; */
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.card-noticia a:hover {
+    /* color: #666; */
+    color: #03a9f4;
+    text-decoration: underline;
+}
+
+footer {
+    /* background-color: #000; */
+    background-color: #0288d1;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer-box p {
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu ul li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .barra-busca {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .barra-busca input, .barra-busca button {
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+
+    .barra-busca input {
+        width: 100%;
+    }
+
+    .barra-busca button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    .nav-menu ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+
+    .main-content {
+        padding-right: 0;
+    }
+
+    .sidebar {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .card-noticia {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu ul li {
+        font-size: 14px;
+    }
+
+    .card-noticia {
+        padding: 8px;
+    }
+
+    .card-noticia img {
+        height: auto;
+    }
+
+    .footer-box p {
+        font-size: 14px;
+    }
+}

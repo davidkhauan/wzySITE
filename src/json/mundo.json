@@ -1,0 +1,24 @@
+{
+    "noticias": [
+        {
+            "title": "Título da Notícia Principal 1",
+            "summary": "Resumo da notícia principal 1.",
+            "link": "./pages/layout/noticia.html",
+            "image": "https://via.placeholder.com/400x200"
+        }
+    ],
+    "destaque": [
+        {
+            "title": "Título da Notícia em Destaque 1",
+            "summary": "Resumo da notícia em destaque 1.",
+            "link": "./pages/layout/noticia.html"
+        }
+    ],
+    "eleicoes": [
+        {
+            "title": "Título da Notícia sobre Eleições 1",
+            "summary": "Resumo da notícia sobre eleições 1.",
+            "link": "./pages/layout/noticia.html"
+        }
+    ]
+}
