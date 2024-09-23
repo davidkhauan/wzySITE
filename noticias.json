@@ -1,0 +1,88 @@
+{
+    "noticias": {
+      "mundo": [
+        {
+          "titulo": "Acordo Internacional para o Clima é Assinado",
+          "descricao": "Líderes de várias nações assinam um novo tratado para combater as mudanças climáticas.",
+          "imagem": "./src/img/mundo1.jpg",
+          "link": "mundo.html"
+        },
+        {
+          "titulo": "Conflito em Região do Oriente Médio",
+          "descricao": "Tensões aumentam em uma das regiões mais voláteis do mundo.",
+          "imagem": "./src/img/mundo2.jpg",
+          "link": "mundo.html"
+        }
+      ],
+      "politica": [
+        {
+          "titulo": "Reformas Políticas Prometem Mudar o Cenário",
+          "descricao": "Novas reformas políticas estão sendo discutidas para fortalecer a democracia.",
+          "imagem": "./src/img/politica1.jpg",
+          "link": "politica.html"
+        },
+        {
+          "titulo": "Debate Presidencial Gera Polêmica",
+          "descricao": "Candidatos discutem propostas em um acalorado debate que divide opiniões.",
+          "imagem": "./src/img/politica2.jpg",
+          "link": "politica.html"
+        }
+      ],
+      "economia": [
+        {
+          "titulo": "Mercado Financeiro Vive Dia Volátil",
+          "descricao": "As bolsas de valores enfrentam quedas após incertezas globais.",
+          "imagem": "./src/img/economia1.jpg",
+          "link": "economia.html"
+        },
+        {
+          "titulo": "Nova Política Econômica é Anunciada",
+          "descricao": "Governo anuncia um pacote de medidas para aquecer a economia.",
+          "imagem": "./src/img/economia2.jpg",
+          "link": "economia.html"
+        }
+      ],
+      "esportes": [
+        {
+          "titulo": "Final do Campeonato Nacional se Aproxima",
+          "descricao": "Os times finalistas se preparam para o confronto decisivo.",
+          "imagem": "./src/img/esportes1.jpg",
+          "link": "esportes.html"
+        },
+        {
+          "titulo": "Atleta Quebra Recorde Mundial",
+          "descricao": "Atleta surpreende o mundo ao estabelecer um novo recorde em seu esporte.",
+          "imagem": "./src/img/esportes2.jpg",
+          "link": "esportes.html"
+        }
+      ],
+      "tecnologia": [
+        {
+          "titulo": "Lançamento de Nova Tecnologia 5G Revoluciona Conectividade",
+          "descricao": "O 5G começa a ser implementado globalmente, prometendo uma revolução na conectividade.",
+          "imagem": "./src/img/tecnologia1.jpg",
+          "link": "tecnologia.html"
+        },
+        {
+          "titulo": "Inteligência Artificial Inova o Mercado",
+          "descricao": "Empresas estão investindo pesadamente em IA para melhorar seus serviços.",
+          "imagem": "./src/img/tecnologia2.jpg",
+          "link": "tecnologia.html"
+        }
+      ],
+      "saude": [
+        {
+          "titulo": "Novos Avanços na Vacinação Global",
+          "descricao": "Vacinas inovadoras prometem erradicar doenças a longo prazo.",
+          "imagem": "./src/img/saude1.jpg",
+          "link": "saude.html"
+        },
+        {
+          "titulo": "Estudos Revelam Novos Tratamentos para Doenças Raras",
+          "descricao": "Pesquisas avançam no tratamento de doenças que até então não tinham cura.",
+          "imagem": "./src/img/saude2.jpg",
+          "link": "saude.html"
+        }
+      ]
+    }
+}  

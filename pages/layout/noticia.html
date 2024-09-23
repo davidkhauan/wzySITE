@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../../css/noticia.css">
     <title>Título da Notícia - WZy Comunicação</title>
 </head>
@@ -35,16 +32,11 @@
         <div class="container">
             <section class="noticia-content">
                 <article class="noticia-detalhes">
-                    <img src="https://static.vecteezy.com/ti/fotos-gratis/t1/28287431-grupo-do-multietnico-o-negocio-pessoas-dentro-a-escritorio-ai-gerado-foto.jpg" alt="Imagem da Notícia">
+                    <img id="noticia-imagem" alt="Imagem da Notícia">
                     <div class="noticia-info">
-                        <h1>Título Completo da Notícia</h1>
-                        <p class="data">Publicado em: 16 de setembro de 2024</p>
-                        <p>
-                            Este é o conteúdo completo da notícia. Aqui você pode fornecer uma descrição detalhada, incluindo todos os detalhes relevantes para os leitores. É uma boa ideia usar parágrafos, listas e imagens para tornar o texto mais atraente e informativo.
-                        </p>
-                        <p>
-                            Continue lendo para mais detalhes ou explore outras notícias na nossa página. Certifique-se de fornecer informações precisas e relevantes para engajar os leitores.
-                        </p>
+                        <h1 id="noticia-titulo"></h1>
+                        <p class="data" id="noticia-data"></p>
+                        <p id="noticia-conteudo"></p>
                         <a href="../../index.html" class="btn-voltar">Voltar para a Página Principal</a>
                     </div>
                 </article>
@@ -52,24 +44,7 @@
 
             <aside class="sidebar">
                 <h2>Notícias em Destaque</h2>
-                <article class="card-noticia">
-                    <img src="https://static.vecteezy.com/ti/fotos-gratis/t2/4834925-grupo-multirracial-de-jovens-tirando-selfie-foto.jpg" alt="Imagem da Notícia">
-                    <h3>Título da Notícia</h3>
-                    <p>Resumo da notícia.</p>
-                    <a href="../layout/noticia.html">Leia Mais</a>
-                </article>
-                <article class="card-noticia">
-                    <img src="https://static.vecteezy.com/ti/fotos-gratis/t2/4834925-grupo-multirracial-de-jovens-tirando-selfie-foto.jpg" alt="Imagem da Notícia">
-                    <h3>Título da Notícia</h3>
-                    <p>Resumo da notícia.</p>
-                    <a href="../layout/noticia.html">Leia Mais</a>
-                </article>
-                <article class="card-noticia">
-                    <img src="https://static.vecteezy.com/ti/fotos-gratis/t2/4834925-grupo-multirracial-de-jovens-tirando-selfie-foto.jpg" alt="Imagem da Notícia">
-                    <h3>Título da Notícia</h3>
-                    <p>Resumo da notícia.</p>
-                    <a href="../layout/noticia.html">Leia Mais</a>
-                </article>
+                <!-- Os cards de notícias em destaque podem ser adicionados aqui -->
             </aside>
         </div>
     </main>
@@ -81,5 +56,34 @@
     </footer>
 
     <script src="../../script.js"></script>
+    <script>
+        // Função para obter parâmetros da URL
+        function getParameterByName(name) {
+            const url = new URL(window.location.href);
+            return url.searchParams.get(name);
+        }
+
+        // Carregar a notícia com base no ID passado na URL
+        const noticiaId = getParameterByName('id');
+
+        fetch('../../noticias.json')
+            .then(response => response.json())
+            .then(data => {
+                const paginaAtual = window.location.pathname.split("/").pop().split(".")[0];
+                if (data.noticias[paginaAtual]) {
+                    const noticias = data.noticias[paginaAtual];
+                    const noticia = noticias[noticiaId];
+
+                    // Preencher os detalhes da notícia
+                    document.getElementById('noticia-imagem').src = noticia.imagem;
+                    document.getElementById('noticia-titulo').innerText = noticia.titulo;
+                    document.getElementById('noticia-data').innerText = 'Publicado em: ' + new Date().toLocaleDateString();
+                    document.getElementById('noticia-conteudo').innerText = 'Conteúdo detalhado da notícia aqui...'; // Adicione o conteúdo real aqui
+                } else {
+                    console.error('Nenhuma notícia encontrada para esta categoria.');
+                }
+            })
+            .catch(error => console.error('Erro ao carregar o JSON:', error));
+    </script>
 </body>
 </html>
