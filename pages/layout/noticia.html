@@ -1,89 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/noticia.css">
-    <title>Título da Notícia - WZy Comunicação</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="../../index.html">
-                    <img src="../../src/img/lgoo_ytb.png" alt="Logomarca WZy Comunicação" />
-                </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/noticia.css">
+        <title>Título da Notícia - WZy Comunicação</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="../../index.html">
+                        <img src="../../src/img/lgoo_ytb.png" alt="Logomarca WZy Comunicação" />
+                    </a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../mundo.html">Mundo</a></li>
+                        <li><a href="../politica.html">Política</a></li>
+                        <li><a href="../economia.html">Economia</a></li>
+                        <li><a href="../esportes.html">Esportes</a></li>
+                        <li><a href="../tecnologia.html">Tecnologia</a></li>
+                        <li><a href="../saude.html">Saúde</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../mundo.html">Mundo</a></li>
-                    <li><a href="../politica.html">Política</a></li>
-                    <li><a href="../economia.html">Economia</a></li>
-                    <li><a href="../esportes.html">Esportes</a></li>
-                    <li><a href="../tecnologia.html">Tecnologia</a></li>
-                    <li><a href="../saude.html">Saúde</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <div class="container">
-            <section class="noticia-content">
-                <article class="noticia-detalhes">
-                    <img id="noticia-imagem" alt="Imagem da Notícia">
-                    <div class="noticia-info">
-                        <h1 id="noticia-titulo"></h1>
-                        <p class="data" id="noticia-data"></p>
-                        <p id="noticia-conteudo"></p>
-                        <a href="../../index.html" class="btn-voltar">Voltar para a Página Principal</a>
-                    </div>
-                </article>
-            </section>
+        <main>
+            <div class="container">
+                <section class="noticia-content">
+                    <article class="noticia-detalhes">
+                        <img id="noticia-imagem" alt="Imagem da Notícia">
+                        <div class="noticia-info">
+                            <h1 id="noticia-titulo"></h1>
+                            <p class="data" id="noticia-data"></p>
+                            <p id="noticia-conteudo"></p>
+                            <a href="../../index.html" class="btn-voltar">Voltar para a Página Principal</a>
+                        </div>
+                    </article>
+                </section>
 
-            <aside class="sidebar">
-                <h2>Notícias em Destaque</h2>
-                <!-- Os cards de notícias em destaque podem ser adicionados aqui -->
-            </aside>
-        </div>
-    </main>
+                <aside class="sidebar">
+                    <h2>Notícias em Destaque</h2>
+                </aside>
+            </div>
+        </main>
 
-    <footer>
-        <div class="footer-box">
-            <p>Todos os direitos reservados &copy; 2024 WZy Comunicação</p>
-        </div>
-    </footer>
+        <footer>
+            <div class="footer-box">
+                <p>Todos os direitos reservados &copy; 2024 WZy Comunicação</p>
+            </div>
+        </footer>
 
-    <script src="../../script.js"></script>
-    <script>
-        // Função para obter parâmetros da URL
-        function getParameterByName(name) {
-            const url = new URL(window.location.href);
-            return url.searchParams.get(name);
-        }
-
-        // Carregar a notícia com base no ID passado na URL
-        const noticiaId = getParameterByName('id');
-
-        fetch('../../noticias.json')
-            .then(response => response.json())
-            .then(data => {
-                const paginaAtual = window.location.pathname.split("/").pop().split(".")[0];
-                if (data.noticias[paginaAtual]) {
-                    const noticias = data.noticias[paginaAtual];
-                    const noticia = noticias[noticiaId];
-
-                    // Preencher os detalhes da notícia
-                    document.getElementById('noticia-imagem').src = noticia.imagem;
-                    document.getElementById('noticia-titulo').innerText = noticia.titulo;
-                    document.getElementById('noticia-data').innerText = 'Publicado em: ' + new Date().toLocaleDateString();
-                    document.getElementById('noticia-conteudo').innerText = 'Conteúdo detalhado da notícia aqui...'; // Adicione o conteúdo real aqui
-                } else {
-                    console.error('Nenhuma notícia encontrada para esta categoria.');
-                }
-            })
-            .catch(error => console.error('Erro ao carregar o JSON:', error));
-    </script>
-</body>
+        <script src="../../script.js"></script>
+    </body>
 </html>
