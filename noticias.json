@@ -1,19 +1,5 @@
 {
     "noticias": {
-      "mundo": [
-        {
-          "titulo": "Acordo Internacional para o Clima é Assinado",
-          "descricao": "Líderes de várias nações assinam um novo tratado para combater as mudanças climáticas.",
-          "imagem": "./src/img/mundo1.jpg",
-          "link": "mundo.html"
-        },
-        {
-          "titulo": "Conflito em Região do Oriente Médio",
-          "descricao": "Tensões aumentam em uma das regiões mais voláteis do mundo.",
-          "imagem": "./src/img/mundo2.jpg",
-          "link": "mundo.html"
-        }
-      ],
       "politica": [
         {
           "titulo": "Reformas Políticas Prometem Mudar o Cenário",
@@ -26,9 +12,15 @@
           "descricao": "Candidatos discutem propostas em um acalorado debate que divide opiniões.",
           "imagem": "./src/img/politica2.jpg",
           "link": "politica.html"
+        },
+        {
+          "titulo": "teste 1",
+          "descricao": "teste 1",
+          "imagem": "./src/img/politica3.jpg",
+          "link": "politica.html"
         }
       ],
-      "economia": [
+      "ecoNegocios": [
         {
           "titulo": "Mercado Financeiro Vive Dia Volátil",
           "descricao": "As bolsas de valores enfrentam quedas após incertezas globais.",
@@ -42,21 +34,27 @@
           "link": "economia.html"
         }
       ],
-      "esportes": [
+      "cultura": [
         {
-          "titulo": "Final do Campeonato Nacional se Aproxima",
-          "descricao": "Os times finalistas se preparam para o confronto decisivo.",
-          "imagem": "./src/img/esportes1.jpg",
+          "titulo": "Fortaleza encara Sport na estreia do Brasileirão Aspirantes",
+          "descricao": "Em duelo de Leões, válido pela primeira rodada da competição, o Leão do Pici enfrenta o Leão da Ilha nesta quinta-feira (26)",
+          "imagem": "https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/09/26/1691612775-sub20-fortalezaa.jpeg",
           "link": "esportes.html"
         },
         {
-          "titulo": "Atleta Quebra Recorde Mundial",
-          "descricao": "Atleta surpreende o mundo ao estabelecer um novo recorde em seu esporte.",
-          "imagem": "./src/img/esportes2.jpg",
+          "titulo": "Fortaleza recebe Copa das Federações de Beach Tennis pela segunda vez consecutiva",
+          "descricao": "O evento contará com um momento de lançamento para convidados, nesta quinta-feira, 26",
+          "imagem": "https://www.opovo.com.br/_midias/jpg/2024/09/03/820x460/1_whatsapp_image_2024_09_03_at_18_29_48-30036438.jpeg",
+          "link": "esportes.html"
+        },
+        {
+          "titulo": "Fortaleza x Sport se enfrentam pelo Brasileirão de Aspirantes; veja onde assistir",
+          "descricao": "Confronto na capital cearense, que marca a estreia do Rubro-negro, acontece nesta quinta-feira (26), às 16h",
+          "imagem": "https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2024/09/53875124029-5a917ba6b6-k.jpg",
           "link": "esportes.html"
         }
       ],
-      "tecnologia": [
+      "entretenimento": [
         {
           "titulo": "Lançamento de Nova Tecnologia 5G Revoluciona Conectividade",
           "descricao": "O 5G começa a ser implementado globalmente, prometendo uma revolução na conectividade.",
@@ -70,7 +68,7 @@
           "link": "tecnologia.html"
         }
       ],
-      "saude": [
+      "sociedade": [
         {
           "titulo": "Novos Avanços na Vacinação Global",
           "descricao": "Vacinas inovadoras prometem erradicar doenças a longo prazo.",
