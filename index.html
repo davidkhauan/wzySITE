@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="./src/icon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./src/icon/favicon-16x16.png">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="style.css">
-        <title>WZy Comunicação</title>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="./src/img/lgoo_ytb.png" alt="Logomarca WZy Comunicação" />
-                    </a>
-                </div>
-                <nav class="nav-menu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/icon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>WZy Comunicação</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./src/img/lgoo_ytb.png" alt="Logomarca WZy Comunicação" />
+                </a>
+            </div>
+            <div class="mobile-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <aside class="sidebar-menu" id="sidebar">
+                <nav class="sidebar-nav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="./pages/politica.html">Política</a></li>
@@ -27,67 +31,78 @@
                         <li><a href="./pages/sociedade.html">Sociedade</a></li>
                     </ul>
                 </nav>
-                <form class="barra-busca" role="search">
-                    <input type="text" id="search-input" placeholder="Buscar notícias..." />
-                    <button type="submit"><i class="bi bi-search"></i></button>
-                </form>
-            </div>
-        </header>
+            </aside>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="./pages/politica.html" class="nav-link">Política</a></li>
+                    <li><a href="./pages/ecoNegocios.html" class="nav-link">Economia & Negócios</a></li>
+                    <li><a href="./pages/cultura.html" class="nav-link">Cultura</a></li>
+                    <li><a href="./pages/entretenimento.html" class="nav-link">Entretenimento</a></li>
+                    <li><a href="./pages/sociedade.html" class="nav-link">Sociedade</a></li>
+                </ul>
+            </nav>
+            <form class="barra-busca" role="search">
+                <input type="text" id="search-input" placeholder="Buscar notícias..." />
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+    </header>
 
-        <main>
-            <div class="container">
-                <section class="main-content" id="noticias-container">
-                </section>
-                <div class="aside-box">
-                    <aside class="sidebar">
-                        <h2>Notícias em Destaque</h2>
-                        <div class="card">
-                            <img src="path/to/image1.jpg" alt="Notícia 1">
-                            <p>Título da Notícia 1</p>
-                        </div>
-                        <div class="card">
-                            <img src="path/to/image2.jpg" alt="Notícia 2">
-                            <p>Título da Notícia 2</p>
-                        </div>
-                        <div class="card">
-                            <img src="path/to/image3.jpg" alt="Notícia 3">
-                            <p>Título da Notícia 3</p>
-                        </div>
-                        <div class="card">
-                            <img src="path/to/image4.jpg" alt="Notícia 4">
-                            <p>Título da Notícia 4</p>
-                        </div>
-                    </aside>
-                    
-                    <aside class="sidebar">
-                        <h2>Eleições 2024</h2>
-                        <div class="card">
-                            <img src="path/to/image5.jpg" alt="Notícia 5">
-                            <p>Título da Notícia 5</p>
-                        </div>
-                        <div class="card">
-                            <img src="path/to/image6.jpg" alt="Notícia 6">
-                            <p>Título da Notícia 6</p>
-                        </div>
-                        <div class="card">
-                            <img src="path/to/image7.jpg" alt="Notícia 7">
-                            <p>Título da Notícia 7</p>
-                        </div>
-                        <div class="card">
-                            <img src="path/to/image8.jpg" alt="Notícia 8">
-                            <p>Título da Notícia 8</p>
-                        </div>
-                    </aside>
-                </div>
+    <main>
+        <div class="container">
+            <section class="main-content" id="noticias-container">
+            </section>
+            <div class="aside-box">
+                <aside class="sidebar">
+                    <h2>Notícias em Destaque</h2>
+                    <div class="card">
+                        <img src="https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg" alt="Notícia 1">
+                        <p>Título da Notícia 1</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg" alt="Notícia 2">
+                        <p>Título da Notícia 2</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg" alt="Notícia 3">
+                        <p>Título da Notícia 3</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg" alt="Notícia 4">
+                        <p>Título da Notícia 4</p>
+                    </div>
+                </aside>
+                
+                <aside class="sidebar">
+                    <h2>Eleições 2024</h2>
+                    <div class="card">
+                        <img src="https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg" alt="Notícia 5">
+                        <p>Título da Notícia 5</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg" alt="Notícia 6">
+                        <p>Título da Notícia 6</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg" alt="Notícia 7">
+                        <p>Título da Notícia 7</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg" alt="Notícia 8">
+                        <p>Título da Notícia 8</p>
+                    </div>
+                </aside>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <footer>
-            <div class="footer-box">
-                <p>Todos os direitos reservados &copy; 2024 WZy Comunicação</p>
-            </div>
-        </footer>
+    <footer>
+        <div class="footer-box">
+            <p>Todos os direitos reservados &copy; 2024 WZy Comunicação</p>
+        </div>
+    </footer>
 
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>

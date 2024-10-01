@@ -1,86 +1,86 @@
 {
-    "noticias": {
-      "politica": [
-        {
-          "titulo": "Reformas Políticas Prometem Mudar o Cenário",
-          "descricao": "Novas reformas políticas estão sendo discutidas para fortalecer a democracia.",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "politica.html"
-        },
-        {
-          "titulo": "Debate Presidencial Gera Polêmica",
-          "descricao": "Candidatos discutem propostas em um acalorado debate que divide opiniões.",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "politica.html"
-        },
-        {
-          "titulo": "teste 1",
-          "descricao": "teste 1",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "politica.html"
-        }
-      ],
-      "ecoNegocios": [
-        {
-          "titulo": "Mercado Financeiro Vive Dia Volátil",
-          "descricao": "As bolsas de valores enfrentam quedas após incertezas globais.",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "economia.html"
-        },
-        {
-          "titulo": "Nova Política Econômica é Anunciada",
-          "descricao": "Governo anuncia um pacote de medidas para aquecer a economia.",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "economia.html"
-        }
-      ],
-      "cultura": [
-        {
-          "titulo": "Fortaleza encara Sport na estreia do Brasileirão Aspirantes",
-          "descricao": "Em duelo de Leões, válido pela primeira rodada da competição, o Leão do Pici enfrenta o Leão da Ilha nesta quinta-feira (26)",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "esportes.html"
-        },
-        {
-          "titulo": "Fortaleza recebe Copa das Federações de Beach Tennis pela segunda vez consecutiva",
-          "descricao": "O evento contará com um momento de lançamento para convidados, nesta quinta-feira, 26",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "esportes.html"
-        },
-        {
-          "titulo": "Fortaleza x Sport se enfrentam pelo Brasileirão de Aspirantes; veja onde assistir",
-          "descricao": "Confronto na capital cearense, que marca a estreia do Rubro-negro, acontece nesta quinta-feira (26), às 16h",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "esportes.html"
-        }
-      ],
-      "entretenimento": [
-        {
-          "titulo": "Lançamento de Nova Tecnologia 5G Revoluciona Conectividade",
-          "descricao": "O 5G começa a ser implementado globalmente, prometendo uma revolução na conectividade.",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "tecnologia.html"
-        },
-        {
-          "titulo": "Inteligência Artificial Inova o Mercado",
-          "descricao": "Empresas estão investindo pesadamente em IA para melhorar seus serviços.",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "tecnologia.html"
-        }
-      ],
-      "sociedade": [
-        {
-          "titulo": "Novos Avanços na Vacinação Global",
-          "descricao": "Vacinas inovadoras prometem erradicar doenças a longo prazo.",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "saude.html"
-        },
-        {
-          "titulo": "Estudos Revelam Novos Tratamentos para Doenças Raras",
-          "descricao": "Pesquisas avançam no tratamento de doenças que até então não tinham cura.",
-          "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
-          "link": "saude.html"
-        }
-      ]
-    }
-}  
+  "noticias": {
+    "politica": [
+      {
+        "titulo": "Reformas Políticas Prometem Mudar o Cenário",
+        "descricao": "Novas reformas políticas estão sendo discutidas para fortalecer a democracia.",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "politica.html"
+      },
+      {
+        "titulo": "Debate Presidencial Gera Polêmica",
+        "descricao": "Candidatos discutem propostas em um acalorado debate que divide opiniões.",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "politica.html"
+      },
+      {
+        "titulo": "teste 1",
+        "descricao": "teste 1",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "politica.html"
+      }
+    ],
+    "ecoNegocios": [
+      {
+        "titulo": "Mercado Financeiro Vive Dia Volátil",
+        "descricao": "As bolsas de valores enfrentam quedas após incertezas globais.",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "economia.html"
+      },
+      {
+        "titulo": "Nova Política Econômica é Anunciada",
+        "descricao": "Governo anuncia um pacote de medidas para aquecer a economia.",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "economia.html"
+      }
+    ],
+    "cultura": [
+      {
+        "titulo": "Fortaleza encara Sport na estreia do Brasileirão Aspirantes",
+        "descricao": "Em duelo de Leões, válido pela primeira rodada da competição, o Leão do Pici enfrenta o Leão da Ilha nesta quinta-feira (26).",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "esportes.html"
+      },
+      {
+        "titulo": "Fortaleza recebe Copa das Federações de Beach Tennis pela segunda vez consecutiva",
+        "descricao": "O evento contará com um momento de lançamento para convidados, nesta quinta-feira, 26.",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "esportes.html"
+      },
+      {
+        "titulo": "Fortaleza x Sport se enfrentam pelo Brasileirão de Aspirantes; veja onde assistir",
+        "descricao": "Confronto na capital cearense, que marca a estreia do Rubro-negro, acontece nesta quinta-feira (26), às 16h.",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "esportes.html"
+      }
+    ],
+    "entretenimento": [
+      {
+        "titulo": "Lançamento de Nova Tecnologia 5G Revoluciona Conectividade",
+        "descricao": "O 5G começa a ser implementado globalmente, prometendo uma revolução na conectividade.",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "tecnologia.html"
+      },
+      {
+        "titulo": "Inteligência Artificial Inova o Mercado",
+        "descricao": "Empresas estão investindo pesadamente em IA para melhorar seus serviços.",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "tecnologia.html"
+      }
+    ],
+    "sociedade": [
+      {
+        "titulo": "Novos Avanços na Vacinação Global",
+        "descricao": "Vacinas inovadoras prometem erradicar doenças a longo prazo.",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "saude.html"
+      },
+      {
+        "titulo": "Estudos Revelam Novos Tratamentos para Doenças Raras",
+        "descricao": "Pesquisas avançam no tratamento de doenças que até então não tinham cura.",
+        "imagem": "https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg",
+        "link": "saude.html"
+      }
+    ]
+  }
+}
