@@ -313,3 +313,24 @@ footer p {
         margin-bottom: 0.625rem;
     }
 }
+
+/* Adicionando estilos para telas maiores */
+@media (min-width: 769px) {
+    .nav-menu {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        flex-direction: row;
+        transform: translateX(0); /* Menu visível */
+    }
+
+    .nav-menu ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .mobile-menu i {
+        display: none;
+    }
+}
