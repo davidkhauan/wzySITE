@@ -41,7 +41,21 @@ header .container {
     border: 1px solid #fff;
     transform: scale(1.05);
 }
-
+.nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #bb1919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%); /* Escondido inicialmente */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
 .nav-menu ul {
     list-style: none;
     display: flex;
@@ -65,42 +79,6 @@ header .container {
 
 .mobile-menu i {
     display: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.sidebar-menu {
-    position: fixed;
-    top: 0;
-    left: -250px; /* Escondido fora da tela */
-    width: 250px;
-    height: 100vh;
-    background-color: #bb1919;
-    color: white;
-    transition: left 0.3s ease;
-    z-index: 1000;
-    padding-top: 2rem;
-}
-.sidebar-menu.active {
-    left: 0;
-}
-.sidebar-menu ul {
-    list-style: none;
-    padding: 0;
-}
-.sidebar-menu ul li {
-    padding: 1rem;
-    border-bottom: 1px solid #fff;
-}
-.sidebar-menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    display: block;
-    transition: background-color 0.3s;
-}
-.sidebar-menu ul li a:hover {
-    background-color: #8e0b0b;
 }
 
 .barra-busca {
@@ -166,38 +144,30 @@ main .container {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 3px;
-    padding: 1rem;
+    padding: 0.9375rem;
     margin-bottom: 1.25rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-.card-noticia:hover {
-    transform: scale(1.02);
 }
 .card-noticia img {
     width: 100%;
-    height: auto;
+    max-width: 700px;
     border-radius: 3px;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.625rem;
 }
-.card-noticia h2 {
-    font-size: 1.5rem;
-    color: #bb1919;
-    margin-bottom: 0.75rem;
+.card-noticia h3 {
+    font-size: 1.3rem;
+    margin: 0.625rem 0;
 }
 .card-noticia p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 0.75rem;
+    color: #4d4d4d;
+    margin-bottom: 0.625rem;
 }
 .card-noticia a {
     color: #bb1919;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s;
 }
 .card-noticia a:hover {
-    color: #8e0b0b;
     text-decoration: underline;
 }
 
@@ -291,37 +261,41 @@ footer p {
     }
 }
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
     .nav-menu {
         position: absolute;
-        top: 8vh;
+        top: 0;
         right: 0;
-        width: 58vh;
-        height: 92vh;
+        background-color: #bb1919; /* Define o fundo do menu */
+        width: 250px; /* Largura do menu ao abrir */
+        height: 100vh; /* Ocupará a tela inteira */
+        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
+        justify-content: center;
+        gap: 1rem;
+        z-index: 1000;
+        transform: translateX(100%); /* Menu escondido */
+        transition: transform 0.3s ease-in-out;
     }
+
     .nav-menu.active {
-        transform: translateX(0);
+        transform: translateX(0); /* Mostra o menu ao clicar */
     }
-    .nav-menu ul li {
-        margin-left: 0;
-        opacity: 0;
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .mobile-menu i {
         display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
     }
 
-    .nav-menu {
-        /* display: none; Oculta o menu principal */
-        visibility: hidden;
+    .barra-busca {
+        display: none; /* Esconde a barra de busca em telas pequenas */
     }
 }
 @media (max-width: 480px) {
