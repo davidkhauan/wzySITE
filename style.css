@@ -41,6 +41,7 @@ header .container {
     border: 1px solid #fff;
     transform: scale(1.05);
 }
+
 .nav-menu {
     position: absolute;
     top: 0;
@@ -216,7 +217,6 @@ main .container {
     height: 50px;
     margin-right: 10px;
 }
-
 .sidebar .card p {
     margin: 0;
 }
