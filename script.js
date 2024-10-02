@@ -85,10 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
       this.navList = document.querySelector(navList);
       this.navLinks = document.querySelectorAll(navLinks);
       this.activeClass = 'active';
-
+  
       this.handleClick = this.handleClick.bind(this);
+      this.handleOutsideClick = this.handleOutsideClick.bind(this);
     }
-
+  
     animateLinks() {
       this.navLinks.forEach((link, index) => {
         link.style.animation
@@ -96,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
           : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
       });
     }
-
+  
     handleClick() {
       console.log('Menu clicked'); // Log de depuração
       this.navList.classList.toggle(this.activeClass);
@@ -104,12 +105,21 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('navList classes:', this.navList.classList); // Verificar classes
       console.log('mobileMenuIcon classes:', this.mobileMenuIcon.classList); // Verificar classes
       this.animateLinks();
+      document.addEventListener('click', this.handleOutsideClick); // Adiciona o evento ao clicar fora
     }
-
+  
+    handleOutsideClick(event) {
+      if (!this.navList.contains(event.target) && !this.mobileMenuIcon.contains(event.target)) {
+        this.navList.classList.remove(this.activeClass);
+        this.mobileMenuIcon.classList.remove(this.activeClass);
+        document.removeEventListener('click', this.handleOutsideClick); // Remove o evento após fechar
+      }
+    }
+  
     addClickEvent() {
       this.mobileMenuIcon.addEventListener('click', this.handleClick);
     }
-
+  
     init() {
       if (this.mobileMenuIcon) {
         this.addClickEvent();
@@ -119,6 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Iniciando o menu com as classes corretas
-  const mobileNavbar = new MobileNavbar('.mobile-menu i', '.nav-menu', '.nav-menu li');
+  const mobileNavbar = new MobileNavbar('.mobile-menu', '.nav-menu', '.nav-list li');
   mobileNavbar.init();
 });
