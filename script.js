@@ -130,5 +130,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Iniciando o menu com as classes corretas
   const mobileNavbar = new MobileNavbar('.mobile-menu', '.nav-menu', '.nav-list li');
-  mobileNavbar.init();
+  mobileNavbar.init();  
 });
