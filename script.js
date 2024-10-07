@@ -1,46 +1,56 @@
-document.addEventListener ('DOMContentLoaded', () => {
-  fetch ('../noticias.json')
-    .then (response => response.json())
-    .then (data => {
-      const paginaAtual = window.location.pathname.split ('/').pop().split ('.') [0]
-      const container = document.querySelector ('.main-content')
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('/noticias.json')
+    .then(response => response.json())
+    .then(data => {
+      const paginaAtual = window.location.pathname.split('/').pop().split('.')[0];
+      const container = document.querySelector('.main-content');
 
+      // Página inicial (index.html)
       if (paginaAtual === 'index') {
-        Object.keys (data.noticias).forEach (categoria => {
-          const noticia = data.noticias [categoria] [0]
-          const index = 0
+        Object.keys(data.noticias).forEach(categoria => {
+          const noticia = data.noticias[categoria][0];  // Exibindo apenas a primeira notícia de cada categoria
+          const index = 0;
           const card = `
             <div class="card-noticia">
               <img src="${noticia.imagem}" alt="${noticia.titulo}">
               <h2>${noticia.titulo}</h2>
               <p>${noticia.descricao}</p>
-              <a href="./pages/layout/noticia.html?id=${index}&categoria=${categoria}" class="leia-mais" data-categoria="${categoria}" data-index="${index}">Leia mais</a>
+              <a href="./pages/layout/noticia.html?id=${index}&categoria=${categoria}" class="leia-mais">Leia mais</a>
             </div>
-          `
-          container.innerHTML += card
-        })
-
-        document.querySelectorAll ('.leia-mais').forEach (link => {
-          link.addEventListener ('click', function () {
-            const categoria = this.getAttribute ('data-categoria')
-            const index = this.getAttribute ('data-index')
-            localStorage.setItem('noticiaSelecionada', JSON.stringify(data.noticias[categoria][index]));
-          });
+          `;
+          container.innerHTML += card;
         });
-      } else if (paginaAtual === 'noticia') {
-        // Carrega a notícia no detalhe
-        const noticia = JSON.parse(localStorage.getItem('noticiaSelecionada'));
+      } 
+      // Página de detalhes da notícia (noticia.html)
+      else if (paginaAtual === 'noticia') {
+        // Obter parâmetros da URL
+        const params = new URLSearchParams(window.location.search);
+        const categoria = params.get('categoria');
+        const id = params.get('id');
 
-        if (noticia) {
+        // Verificar se os parâmetros estão sendo recebidos
+        if (!categoria || !id) {
+          container.innerHTML = '<h1>Parâmetros inválidos.</h1>';
+          return;
+        }
+
+        // Verifica se a categoria e o ID existem no JSON
+        if (data.noticias[categoria] && data.noticias[categoria][id]) {
+          const noticia = data.noticias[categoria][id];
+
+          // Preencher os elementos HTML com os dados da notícia
           document.getElementById('noticia-imagem').src = noticia.imagem;
           document.getElementById('noticia-titulo').textContent = noticia.titulo;
           document.getElementById('noticia-conteudo').textContent = noticia.descricao;
 
+          // Atualizar o título da página
           document.title = `${noticia.titulo} - WZy Comunicação`;
         } else {
           container.innerHTML = '<h1>Notícia não encontrada.</h1>';
         }
-      } else {
+      } 
+      // Outras páginas
+      else {
         if (data.noticias[paginaAtual]) {
           const noticias = data.noticias[paginaAtual];
 
@@ -51,19 +61,10 @@ document.addEventListener ('DOMContentLoaded', () => {
                   <img src="${noticia.imagem}" alt="${noticia.titulo}">
                   <h2>${noticia.titulo}</h2>
                   <p>${noticia.descricao}</p>
-                  <a href="../pages/layout/noticia.html?id=${index}&categoria=${paginaAtual}" class="leia-mais" data-categoria="${paginaAtual}" data-index="${index}">Leia mais</a>
+                  <a href="../pages/layout/noticia.html?id=${index}&categoria=${paginaAtual}" class="leia-mais">Leia mais</a>
                 </div>
               `;
               container.innerHTML += card;
-            });
-
-            document.querySelectorAll('.leia-mais').forEach(link => {
-              link.addEventListener('click', function () {
-                const categoria = this.getAttribute('data-categoria');
-                const index = this.getAttribute('data-index');
-                localStorage.setItem('noticiaSelecionada', JSON.stringify(data.noticias[categoria][index]));
-                console.log('Notícia selecionada:', noticia);
-              });
             });
           } else {
             container.innerHTML = '<h1>Nenhuma notícia disponível para esta categoria.</h1>';
@@ -74,8 +75,8 @@ document.addEventListener ('DOMContentLoaded', () => {
       }
     })
     .catch(error => {
-      container.innerHTML = '<h1>Erro ao carregar o JSON.</h1>';
       console.error('Erro ao carregar o JSON:', error);
+      container.innerHTML = '<h1>Erro ao carregar o JSON.</h1>';
     });
 
   // Navbar móvel
@@ -102,15 +103,14 @@ document.addEventListener ('DOMContentLoaded', () => {
       this.navList.classList.toggle(this.activeClass);
       this.mobileMenuIcon.classList.toggle(this.activeClass);
       this.animateLinks();
-
-      document.addEventListener('click', this.handleOutsideClick); // Adiciona o evento ao clicar fora
+      document.addEventListener('click', this.handleOutsideClick);
     }
 
     handleOutsideClick(event) {
       if (!this.navList.contains(event.target) && !this.mobileMenuIcon.contains(event.target)) {
         this.navList.classList.remove(this.activeClass);
         this.mobileMenuIcon.classList.remove(this.activeClass);
-        document.removeEventListener('click', this.handleOutsideClick); // Remove o evento após fechar
+        document.removeEventListener('click', this.handleOutsideClick);
       }
     }
 
