@@ -82,17 +82,17 @@ header .container {
     display: none;
 }
 
-.barra-busca {
+.divSearch {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-.barra-busca input {
+.divSearch input {
     padding: 0.625rem;
     border-radius: 3px;
     border: 1px solid #cccccc;
 }
-.barra-busca button {
+.divSearch button {
     padding: 0.625rem 0.9375rem;
     background-color: #1a1a1a;
     color: white;
@@ -101,7 +101,7 @@ header .container {
     cursor: pointer;
     transition: 0.3s;
 }
-.barra-busca button:hover {
+.divSearch button:hover {
     background-color: #333;
 }
 

@@ -95,6 +95,109 @@
         "imagem": "https://s2-g1.glbimg.com/eoPYhl6qxGcfmDsX7dNgYBEXaWw=/0x0:1680x1168/1200x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/x/s/qs1xX7QOW1vUpCU0QePw/tce-leilao.jpg",
         "link": "cultura.html"
       }
+    ]
+  }
+}
+
+=-=-=-=-=-=-=-=-=
+
+{
+  "noticias": {
+    "politica": [
+      {
+        "titulo": "Fortaleza: André Fernands e Evandro Leitão disputarão o segundo turno",
+        "descricao": "Os candidatos André Fernandes (PL) e Evandro Leitão (PT) vão disputar o segundo turno das eleições em Fortaleza. Fernandes tem 40,27% dos votos válidos e Leitão tem 34,29%.",
+        "imagem": "https://imagens.ebc.com.br/CDND7KXrDAbbq-wOvFlfa5RHhl0=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2024/10/06/evandroandre.jpg?itok=Z_XQX0X8",
+        "link": "politica.html"
+      },
+      {
+        "titulo": "4 candidatos derrotados em Fortaleza já se posicionaram no 2° turno; veja quem apoiam",
+        "descricao": "Dos sete candidatos que não passarma para o segundo turno em Fortaleza, pelo menos três já definiram posição para a votação do próximo dia 27. Um quarto indicou o caminho que provavelmente será seguido.",
+        "imagem": "https://www.opovo.com.br/_midias/jpg/2024/10/06/820x460/1_2_turno_fortaleza-30704385.jpg",
+        "link": "politica.html"
+      },
+      {
+        "titulo": "40% dos vereadores de Fortaleza não retornam à Câmara em 2025; saiba quem ficou de fora",
+        "descricao": "Em 2025, 40% dos 43 vereadores que hoje ocupam uma vaga na Câmara Municipal de Fortaleza (CMFor) não terão mandato. Ao todo, 17 parlamentares não foram reeleitos ou, no caso de dois deles, não chegaram a se candidatar.",
+        "imagem": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3567850:1728311921/img4%20(3)%20(1).jpg?f=16x9&h=698&w=1280&$p$f$h$w=059102f",
+        "link": "politica.html"
+      },
+      {
+        "titulo": "Qual deverá ser destino político de Sarto e RC após dura derrota nas urnas em Fortaleza",
+        "descricao": "O terceiro lugar na votação no domingo, 6, colocou José Sarto (PDT) como o primeiro prefeito a concorrer e não conseguiu reeleição em Fortaleza. Nem mesmo uma vaga no segundo turno foi garantida. O mau resultado respinga ainda em outra figura importante do grupo político pedetista na Capital, o ex-prefeito Roberto Claudio (PDT). Como devem seguir a dupla daqui para frente, mirando no futuro?",
+        "imagem": "https://www.opovo.com.br/_midias/jpg/2023/04/15/750x500/1__convencao_do_pdt_em_fortaleza__32-21719274.jpg",
+        "link": "politica.html"
+      },
+      {
+        "titulo": "Vereadores da causa animal são eleitos para a Câmara de Fortaleza; saiba quem são",
+        "descricao": "Dois vereadores que defendem a causa animal foram eleitos para a Câmara Municipal de Fortaleza (CMFor) no último domingo, 6. Apollo Vicz e Erich Douglas são do PSD, ambos conhecidos por trabalharem no resgate de 'pets'.",
+        "imagem": "https://www.opovo.com.br/_midias/jpg/2024/10/07/820x460/1_vereadores_pets-30726541.jpg",
+        "link": "politica.html"
+      }
+    ],
+    "ecoNegocios": [
+      {
+        "titulo": "Sarto diz que Fortaleza é a maior economia do Nordeste e referência nacional em educação",
+        "descricao": "O prefeito de Fortaleza e candidato à reeleição, José Sarto (PDT), liderou carreata pelas ruas da capital cearense neste domingo (29), partindo do bairro Conjunto Ceará com destino ao Pirambu. Ao lado do ex-ministro Ciro Gomes e do presidente municipal do PDT, Roberto Cláudio, o mandatário destacou ações realizadas por sua gestão, destacando que o município se consolidou nos últimos anos como a maior economia do Nordeste e referência nacional em educação.",
+        "imagem": "https://api.ootimista.com.br/wp-content/uploads/2024/09/DSC01228-1024x685.jpg",
+        "link": "economia.html"
+      },
+      {
+        "titulo": "Vendas devem aumentar 1,8% em Fortaleza no Dia das Crianças",
+        "descricao": "Com a aproximação do Dia das Crianças, celebrado em 12 de outubro, o comércio de Fortaleza antecipa um aumento nas vendas. Uma pesquisa da Fecomércio CE, realizada pelo Instituto de Pesquisa e Desenvolvimento do Ceará (IPDC), estima que o varejo local deverá movimentar cerca de R$ 285 milhões. O crescimento é de 1,8% em relação ao ano passado.",
+        "imagem": "https://institucional.giassi.com.br/slir/w3000-h3000/upload/gallery/crianca/dsc05566.jpg",
+        "link": "economia.html"
+      },
+      {
+        "titulo": "Maior evento de inovação do Ceará tem inscrições abertas para startups",
+        "descricao": "O Siará Tech Summit 2024, maior evento de inovação do Ceará, está com inscrições abertas para startups que desejam expor suas soluções em um ambiente repleto de ideias. Realizado pelo Sebrae Ceará, a conferência acontece de 23 a 25 de outubro, das 14 às 22 horas, no Centro de Eventos do Ceará.",
+        "imagem": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3568072:1728331107/sebrae-capa.jpg?f=16x9&h=698&w=1280&$p$f$h$w=dda13ad",
+        "link": "economia.html"
+      },
+      {
+        "titulo": "Dia das Crianças deve movimentar R$ 285 milhões no comércio de Fortaleza, aponta Fecomércio",
+        "descricao": "O comércio de Fortaleza está se preparando para um aumento nas vendas com a chegada do Dia das Crianças, comemorado em 12 de outubro. De acordo com a pesquisa realizada pela Fecomércio CE, por meio do Instituto de Pesquisa e Desenvolvimento do Ceará (IPDC), as compras relacionadas à data deverão movimentar R$ 285 milhões no varejo local, representando um crescimento de 1,8% em relação ao ano anterior.",
+        "imagem": "https://ce.agenciasebrae.com.br/wp-content/uploads/sites/7/2024/10/Dia-das-Criancas-Fecomercio.jpeg",
+        "link": "economia.html"
+      },
+      {
+        "titulo": "BNDES realiza evento em Fortaleza (CE) para micro, pequenas e médias empresas nesta quinta, 26",
+        "descricao": "O Banco Nacional de Desenvolvimento Econômico e Social (BNDES) promove o evento “O BNDES Mais Perto de Você”, dirigido a micro, pequenas e médias empresas, na próxima quinta-feira, 26, em Fortaleza (CE). A apresentação é gratuita e as inscrições podem ser feitas no link: bndes.gov.br/mais-perto-de-voce.",
+        "imagem": "https://agenciadenoticias.bndes.gov.br/export/sites/default/.galleries/imagegallery/Jade-Queiroz-Mtur.png_1205681035.png",
+        "link": "economia.html"
+      }
+    ],
+    "cultura": [
+      {
+        "titulo": "Novas instituições ampliam a importância de Fortaleza como centro cultural e incrementam turismo",
+        "descricao": "Quarta cidade do Brasil em termos populacionais, atrás apenas de São Paulo, Rio e Brasília, segundo o Censo Demográfico 2022 do IBGE, Fortaleza vem consolidando sua importância também como capital cultural, graças a equipamentos inaugurados nos últimos anos, modificando o perfil do turismo na região. Se antes os viajantes passavam poucos dias na cidade ou mesmo seguiam para outros destinos do estado direto do aeroporto, como Jericoacoara, Canoa Quebrada, Praia de Flecheiras ou Aquiraz (município da região metropolitana onde fica o Beach Park), agora reservam um período na capital para conhecer as atrações culturais.",
+        "imagem": "https://s2-oglobo.glbimg.com/s7waqxP2snJh9zOxymxIdRjjXqk=/0x0:800x600/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/V/x/UccZ9lR6ud2ckEFAvRrw/vista-fachada-aerea-felipe-petrovsky-02.jpg",
+        "link": "cultura.html"
+      },
+      {
+        "titulo": "Em Fortaleza, MinC e UFC lançam Plano de Cultura",
+        "descricao": "A Universidade Federal do Ceará (UFC) completa 70 anos em 2024. Entre as ações que marcam o pioneirismo da instituição, na noite de terça-feira (13), foi lançado seu Plano de Cultura, uma parceria com o Ministério da Cultura.",
+        "imagem": "https://www.gov.br/cultura/pt-br/assuntos/noticias/em-fortaleza-minc-e-ufc-lancam-plano-de-cultura/carrossel.png/@@images/fc3c4e6c-7dae-419f-9c26-93f36879f6ec.png",
+        "link": "cultura.html"
+      },
+      {
+        "titulo": "Quais são as propostas para a Cultura nos planos de governo dos candidatos à Prefeitura de Fortaleza",
+        "descricao": "Entre temas urgentes como Segurança Pública e Saúde — destacados por eleitores como os principais problemas de Fortaleza, de acordo com dados da primeira pesquisa Quaest para a disputa pela Prefeitura da Capital —, a área da Cultura costuma passar ao largo do debate eleitoral.",
+        "imagem": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2994786:1724933967/secultfor-fachada-google.jpg?f=16x9&h=698&w=1280&$p$f$h$w=c0c663f",
+        "link": "cultura.html"
+      },
+      {
+        "titulo": "Cultura e arte: 14º Festival Popular de Teatro de Fortaleza abre inscrições para a seleção de espetáculos",
+        "descricao": "A Companhia Prisma de Artes abriu as inscrições para a seleção de espetáculos que integrarão o 14º Festival Popular de Teatro de Fortaleza (Feptef). O evento, que será realizado de 10 a 14 de dezembro de 2024, se estenderá além dos limites da capital, conectando-se com as cidades de Baturité e Redenção, e pretende promover o desenvolvimento cultural e a democratização do acesso à arte.",
+        "imagem": "https://s2-g1.glbimg.com/YwCvqZuwQYjzdpYNFoxDyKwJG2k=/0x0:1044x685/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/E/n/ApiCzuQdamBIeLOcdXCg/teatro.jpg",
+        "link": "cultura.html"
+      },
+      {
+        "titulo": "Justiça condena município de Fortaleza, construtora e servidores à indenização superior a R$ 3 milhões por demolição de bem tombado",
+        "descricao": "A Justiça Estadual julgou procedente ação ingressada pelo Ministério Público do Estado do Ceará e condenou por danos morais coletivos o município de Fortaleza, uma construtora e três servidores que autorizaram a demolição em 2011 da Chácara Flora, em Fortaleza. À época, a edificação era tombada provisoriamente e mesmo assim foi demolida pela Construtora e Incorporadora Douglas LTDA com autorização irregular expedida pela Prefeitura de Fortaleza. Segundo a sentença proferida no dia 12 de agosto, os réus terão de pagar indenização de mais de R$ 3 milhões por danos morais coletivos.",
+        "imagem": "https://reporterceara.com.br/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-06-at-19.07.05-1-640x366.jpeg",
+        "link": "cultura.html"
+      }
     ],
     "entretenimento": [
       {
