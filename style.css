@@ -1,4 +1,3 @@
-/* Estilos base */
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +52,7 @@ header .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateX(100%); /* Escondido inicialmente */
+    transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
 }
@@ -265,21 +264,21 @@ footer p {
         position: absolute;
         top: 0;
         right: 0;
-        background-color: #bb1919; /* Define o fundo do menu */
-        width: 250px; /* Largura do menu ao abrir */
-        height: 100vh; /* Ocupará a tela inteira */
+        background-color: #bb1919;
+        width: 250px;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1rem;
         z-index: 1000;
-        transform: translateX(100%); /* Menu escondido */
+        transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
     }
 
     .nav-menu.active {
-        transform: translateX(0); /* Mostra o menu ao clicar */
+        transform: translateX(0);
     }
 
     .nav-menu ul {
@@ -295,7 +294,7 @@ footer p {
     }
 
     .barra-busca {
-        display: none; /* Esconde a barra de busca em telas pequenas */
+        display: none;
     }
 }
 @media (max-width: 480px) {
@@ -314,7 +313,6 @@ footer p {
     }
 }
 
-/* Adicionando estilos para telas maiores */
 @media (min-width: 769px) {
     .nav-menu {
         position: static;
@@ -322,7 +320,7 @@ footer p {
         height: auto;
         background-color: transparent;
         flex-direction: row;
-        transform: translateX(0); /* Menu visível */
+        transform: translateX(0);
     }
 
     .nav-menu ul {
